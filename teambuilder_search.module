@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Teambuilder Search feature.
+ */
+
+include_once 'teambuilder_search.features.inc';
