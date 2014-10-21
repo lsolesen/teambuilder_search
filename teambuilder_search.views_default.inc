@@ -45,7 +45,7 @@ function teambuilder_search_views_default_views() {
     ),
     'title_field' => array(
       'align' => '',
-      'separator' => '<br>',
+      'separator' => '',
       'empty_column' => 0,
     ),
     'body' => array(
@@ -70,6 +70,12 @@ function teambuilder_search_views_default_views() {
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'search_api_index_activity_index';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
+  $handler->display->display_options['fields']['title_field']['type'] = 'title_linked';
+  $handler->display->display_options['fields']['title_field']['settings'] = array(
+    'title_style' => 'h4',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
   /* Field: Indexed Node: The main body text */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'search_api_index_activity_index';
